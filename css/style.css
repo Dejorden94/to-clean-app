@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 
 html {
@@ -26,7 +26,8 @@ body {
     width: 40rem;
     height: 60rem;
     background: rgba(255, 255, 255, 0.4);
-    border: 0.2rem solid rgba(255, 255, 255, -.16, green, blue, alpha);
+    border: 0.2rem solid rgba(255, 255, 255, 0.16);
+    border-radius: 0.5rem;
 }
 
 .cleanCard__header {
