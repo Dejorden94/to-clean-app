@@ -32,4 +32,8 @@ body {
 
 .cleanCard__header {
     height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Caveat', cursive;
 }
