@@ -20,6 +20,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding: 4rem;
+    color: #eee;
 }
 
 .cleanCard {
@@ -42,4 +43,11 @@ body {
     font-weight: 400;
     font-size: 300%;
     color: white;
+}
+
+.cleanCard__activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
