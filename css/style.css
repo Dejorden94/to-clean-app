@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px red solid;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    background: linear-gradient(to top left, #ADC4CE, 60%, #96B6C5);
+    min-height: 100vh;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.cleanCard {
+    width: 40rem;
+    height: 60rem;
+    background: rgba(255, 255, 255, 0.4);
+    border: 0.2rem solid rgba(255, 255, 255, -.16, green, blue, alpha);
+}
+
+.cleanCard__header {
+    height: 20%;
+}
