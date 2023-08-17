@@ -21,6 +21,7 @@ body {
     justify-content: center;
     padding: 4rem;
     color: #eee;
+    font-family: 'Caveat', cursive;
 }
 
 .cleanCard {
@@ -36,7 +37,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Caveat', cursive;
 }
 
 .cleanCard__heading {
@@ -48,6 +48,17 @@ body {
 .cleanCard__activities {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 80%;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.cleanCard_activity {
+    list-style: none;
+    border: 0.2rem solid #eee;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    padding: 1rem;
 }
