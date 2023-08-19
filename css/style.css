@@ -25,11 +25,13 @@ body {
 }
 
 .cleanCard {
+    /* Zorgt dat de lentge nu anderhalf keer zo groot is als de breete */
+    aspect-ratio: 1/1.5;
     width: 40rem;
-    height: 60rem;
-    background: rgba(20, 20, 20, 0.9);
-    border: 0.2rem solid rgba(255, 255, 255, 0.5);
+    background: rgba(20, 20, 20, 1);
     border-radius: 0.5rem;
+    /* Verdeelt alle blokken over de ruimte */
+    /* flex-grow: 1; */
 }
 
 .cleanCard__header {
@@ -61,4 +63,8 @@ body {
     border-right: none;
     width: 100%;
     padding: 1rem;
+}
+
+.cleanCard_activity--done {
+    text-decoration: line-through;
 }
