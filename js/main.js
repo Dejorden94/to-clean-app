@@ -36,6 +36,9 @@ const renderCards = (data) => {
         for (let j = 0; j < data[i].activities.length; j++) {
             let activity = document.createElement("li");
             activity.classList = "cleanCard_activity";
+            if (data[i].activities[j].done === true) {
+                activity.classList = "cleanCard_activity cleanCard_activity--done";
+            }
             activity.innerText = data[i].activities[j].title;
             activities.append(activity);
         }

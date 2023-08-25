@@ -8,7 +8,7 @@
             },
             {
                 "title": "Afwassen",
-                "done": false
+                "done": true
             },
             {
                 "title": "Werkspullen opruimen",
@@ -34,7 +34,7 @@
         "activities": [
             {
                 "title": "Kamer opruimen",
-                "done": false
+                "done": true
             },
             {
                 "title": "Oma bezoeken",

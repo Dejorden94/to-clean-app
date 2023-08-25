@@ -26,7 +26,7 @@ body {
 
 .cleanCard {
     /* Zorgt dat de lentge nu anderhalf keer zo groot is als de breete */
-    aspect-ratio: 1/1.5;
+    height: 50rem;
     width: 40rem;
     background: rgba(20, 20, 20, 1);
     border-radius: 0.5rem;
@@ -63,6 +63,10 @@ body {
     border-right: none;
     width: 100%;
     padding: 1rem;
+}
+
+.cleanCard_activity:hover {
+    cursor: pointer;
 }
 
 .cleanCard_activity--done {
