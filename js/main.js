@@ -7,6 +7,10 @@
         <li class="cleanCard_activity">Trainen</li>
         <li class="cleanCard_activity">Programmeren</li>
     </ul>
+    <footer>
+     <input>
+     <button></button>
+    </footer>
 </article> */}
 
 
@@ -46,7 +50,15 @@ const renderCards = (data) => {
                 this.classList.toggle("cleanCard_activity--done")
             })
         }
-
+        let footer = document.createElement("footer");
+        footer.classList = "cleanCard__footer";
+        article.appendChild(footer);
+        let input = document.createElement("input");
+        input.classList = "cleanCard__input";
+        footer.appendChild(input);
+        let button = document.createElement("button");
+        button.classList = "cleanCard__button";
+        footer.appendChild(button);
     }
 }
 
