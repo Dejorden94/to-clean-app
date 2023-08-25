@@ -1,0 +1,17 @@
+{
+    "title": "Elker dag",
+    "activities": [
+        {
+            "title": "Eten Koken",
+            "done": false
+        },
+        {
+            "title": "Afwassen",
+            "done": false
+        },
+        {
+            "title": "Werkspullen opruimen",
+            "done": false
+        }
+    ]
+}
