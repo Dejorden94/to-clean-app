@@ -22,6 +22,13 @@ const renderCards = (data) => {
         let header = document.createElement("header");
         header.classList = "cleanCard__header";
         article.appendChild(header);
+
+        let heading = document.createElement("h1");
+        heading.classList = "cleanCard__heading";
+        header.appendChild(heading);
+
+        heading.innerText = data[i].title;
+
     }
 }
 
