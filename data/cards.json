@@ -1,17 +1,32 @@
-{
-    "title": "Elker dag",
-    "activities": [
-        {
-            "title": "Eten Koken",
-            "done": false
-        },
-        {
-            "title": "Afwassen",
-            "done": false
-        },
-        {
-            "title": "Werkspullen opruimen",
-            "done": false
-        }
-    ]
-}
+[
+    {
+        "title": "Elker dag",
+        "activities": [
+            {
+                "title": "Eten Koken",
+                "done": false
+            },
+            {
+                "title": "Afwassen",
+                "done": false
+            },
+            {
+                "title": "Werkspullen opruimen",
+                "done": false
+            }
+        ]
+    },
+    {
+        "title": "Elke week",
+        "activities": [
+            {
+                "title": "Boven afstoffen",
+                "done": false
+            },
+            {
+                "title": "Bendeden afstoffen",
+                "done": false
+            }
+        ]
+    }
+]
