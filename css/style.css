@@ -102,3 +102,7 @@ body {
     background: #eee;
     font-family: 'Caveat', cursive;
 }
+
+.cleanCard__button:hover {
+    cursor: pointer;
+}

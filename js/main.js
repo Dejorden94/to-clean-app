@@ -59,9 +59,27 @@ const renderCards = (data) => {
         footer.appendChild(input);
         let button = document.createElement("button");
         button.classList = "cleanCard__button";
-        button.innerText = "Add"
+        button.innerText = "Add";
+
+        button.addEventListener("click", function () {
+            const activityFromFunction = renderActivity(input.value, false);
+            activities.appendChild(activityFromFunction);
+        })
         footer.appendChild(button);
     }
+}
+
+function renderActivity(title, done) {
+    let activity = document.createElement("li");
+    activity.classList = "cleanCard__activity";
+    if (done === true) {
+        activity.classList = "cleanCard__activity cleanCard_activity--done";
+    }
+    activity.innerText = title;
+    activity.addEventListener("click", function () {
+        this.classList.toggle("cleanCard__activity--done")
+    })
+    return activity
 }
 
 fetch("../data/cards.json").then(
