@@ -41,6 +41,10 @@ const renderCards = (data) => {
             }
             activity.innerText = data[i].activities[j].title;
             activities.append(activity);
+
+            activity.addEventListener("click", function () {
+                this.classList.toggle("cleanCard_activity--done")
+            })
         }
 
     }
