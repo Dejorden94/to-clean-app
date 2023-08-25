@@ -69,7 +69,7 @@ body {
     cursor: pointer;
 }
 
-.cleanCard_activity--done {
+.cleanCard__activity--done {
     text-decoration: line-through;
 }
 
