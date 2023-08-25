@@ -18,6 +18,10 @@ const renderCards = (data) => {
         article.classList = "cleanCard";
         //Stop deze in de body
         document.querySelector("body").appendChild(article);
+
+        let header = document.createElement("header");
+        header.classList = "cleanCard__header";
+        article.appendChild(header);
     }
 }
 
