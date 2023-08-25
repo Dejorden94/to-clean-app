@@ -28,5 +28,31 @@
                 "done": false
             }
         ]
+    },
+    {
+        "title": "Elke Maand",
+        "activities": [
+            {
+                "title": "Kamer opruimen",
+                "done": false
+            },
+            {
+                "title": "Oma bezoeken",
+                "done": false
+            }
+        ]
+    },
+    {
+        "title": "Leren",
+        "activities": [
+            {
+                "title": "Programmeren",
+                "done": false
+            },
+            {
+                "title": "Drummen",
+                "done": false
+            }
+        ]
     }
 ]
