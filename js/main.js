@@ -29,6 +29,17 @@ const renderCards = (data) => {
 
         heading.innerText = data[i].title;
 
+        let activities = document.createElement("ul");
+        activities.classList = "cleanCard__activities";
+        article.appendChild(activities);
+
+        for (let j = 0; j < data[i].activities.length; j++) {
+            let activity = document.createElement("li");
+            activity.classList = "cleanCard_activity";
+            activity.innerText = data[i].activities[j].title;
+            activities.append(activity);
+        }
+
     }
 }
 
