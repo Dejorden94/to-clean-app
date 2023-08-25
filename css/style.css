@@ -51,12 +51,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80%;
+    height: 70%;
     gap: 2rem;
     padding: 2rem;
 }
 
-.cleanCard_activity {
+.cleanCard__activity {
     list-style: none;
     border: 0.2rem solid #eee;
     border-left: none;
@@ -65,10 +65,40 @@ body {
     padding: 1rem;
 }
 
-.cleanCard_activity:hover {
+.cleanCard__activity:hover {
     cursor: pointer;
 }
 
 .cleanCard_activity--done {
     text-decoration: line-through;
+}
+
+.cleanCard__footer {
+    height: 10%;
+    display: flex;
+    border-top: 0.2rem solid #eee;
+    padding-left: 2rem;
+}
+
+.cleanCard__input {
+    height: 100%;
+    width: 70%;
+    border: none;
+    background: rgba(20, 20, 20, 1);
+    color: #eee;
+    font-size: 100%;
+}
+
+.cleanCard__input:focus {
+    outline: none;
+}
+
+.cleanCard__button {
+    height: 100%;
+    width: 30%;
+    border-radius: 0;
+    border: none;
+    font-size: 100%;
+    background: #eee;
+    font-family: 'Caveat', cursive;
 }

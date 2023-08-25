@@ -39,15 +39,15 @@ const renderCards = (data) => {
 
         for (let j = 0; j < data[i].activities.length; j++) {
             let activity = document.createElement("li");
-            activity.classList = "cleanCard_activity";
+            activity.classList = "cleanCard__activity";
             if (data[i].activities[j].done === true) {
-                activity.classList = "cleanCard_activity cleanCard_activity--done";
+                activity.classList = "cleanCard__activity cleanCard_activity--done";
             }
             activity.innerText = data[i].activities[j].title;
             activities.append(activity);
 
             activity.addEventListener("click", function () {
-                this.classList.toggle("cleanCard_activity--done")
+                this.classList.toggle("cleanCard__activity--done")
             })
         }
         let footer = document.createElement("footer");
@@ -55,9 +55,11 @@ const renderCards = (data) => {
         article.appendChild(footer);
         let input = document.createElement("input");
         input.classList = "cleanCard__input";
+        input.placeholder = "Voeg taak toe...";
         footer.appendChild(input);
         let button = document.createElement("button");
         button.classList = "cleanCard__button";
+        button.innerText = "Add"
         footer.appendChild(button);
     }
 }
