@@ -48,6 +48,12 @@ const renderCards = (data) => {
         let input = document.createElement("input");
         input.classList = "cleanCard__input";
         input.placeholder = "Voeg taak toe...";
+        input.addEventListener("keyup", function (event) {
+            if (event.key === "Enter") {
+                const activityFromFunction = makeActivity({ title: input.value, done: false });
+                activities.appendChild(activityFromFunction);
+            }
+        })
         footer.appendChild(input);
         let button = document.createElement("button");
         button.classList = "cleanCard__button";
