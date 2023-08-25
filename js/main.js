@@ -38,18 +38,10 @@ const renderCards = (data) => {
         article.appendChild(activities);
 
         for (let j = 0; j < data[i].activities.length; j++) {
-            let activity = document.createElement("li");
-            activity.classList = "cleanCard__activity";
-            if (data[i].activities[j].done === true) {
-                activity.classList = "cleanCard__activity cleanCard_activity--done";
-            }
-            activity.innerText = data[i].activities[j].title;
+            let activity = makeActivity(data[i].activities[j])
             activities.append(activity);
-
-            activity.addEventListener("click", function () {
-                this.classList.toggle("cleanCard__activity--done")
-            })
         }
+
         let footer = document.createElement("footer");
         footer.classList = "cleanCard__footer";
         article.appendChild(footer);
@@ -62,20 +54,20 @@ const renderCards = (data) => {
         button.innerText = "Add";
 
         button.addEventListener("click", function () {
-            const activityFromFunction = renderActivity(input.value, false);
+            const activityFromFunction = makeActivity({ title: input.value, done: false });
             activities.appendChild(activityFromFunction);
         })
         footer.appendChild(button);
     }
 }
 
-function renderActivity(title, done) {
+function makeActivity(activityObject) {
     let activity = document.createElement("li");
     activity.classList = "cleanCard__activity";
-    if (done === true) {
+    if (activityObject.done === true) {
         activity.classList = "cleanCard__activity cleanCard_activity--done";
     }
-    activity.innerText = title;
+    activity.innerText = activityObject.title;
     activity.addEventListener("click", function () {
         this.classList.toggle("cleanCard__activity--done")
     })
