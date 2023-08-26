@@ -7,6 +7,12 @@
     /* border: 1px red solid; */
 }
 
+:root {
+    --color: #eee;
+    --bcolor: rgba(20, 20, 20, 1);
+    --handwriting: 'Caveat', cursive;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -20,15 +26,15 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding: 4rem;
-    color: #eee;
-    font-family: 'Caveat', cursive;
+    color: var(--color);
+    font-family: var(--handwriting);
 }
 
 .cleanCard {
     /* Zorgt dat de lentge nu anderhalf keer zo groot is als de breete */
     height: 50rem;
     width: 40rem;
-    background: rgba(20, 20, 20, 1);
+    background: var(--bcolor);
     border-radius: 0.5rem;
     animation-name: popup;
     animation-duration: 0.6s;
@@ -64,7 +70,7 @@ body {
 .cleanCard__heading {
     font-weight: 400;
     font-size: 300%;
-    color: white;
+    color: var(--color);
 }
 
 .cleanCard__activities {
@@ -78,7 +84,7 @@ body {
 
 .cleanCard__activity {
     list-style: none;
-    border: 0.2rem solid #eee;
+    border: 0.2rem solid var(--color);
     border-left: none;
     border-right: none;
     width: 100%;
@@ -96,7 +102,7 @@ body {
 .cleanCard__footer {
     height: 10%;
     display: flex;
-    border-top: 0.2rem solid #eee;
+    border-top: 0.2rem solid var(--color);
     padding-left: 2rem;
 }
 
@@ -104,8 +110,8 @@ body {
     height: 100%;
     width: 70%;
     border: none;
-    background: rgba(20, 20, 20, 1);
-    color: #eee;
+    background: var(--bcolor);
+    color: var(--color);
     font-size: 100%;
 }
 
@@ -119,8 +125,8 @@ body {
     border-radius: 0;
     border: none;
     font-size: 100%;
-    background: #eee;
-    font-family: 'Caveat', cursive;
+    background: var(--color);
+    font-family: var(--handwriting);
 }
 
 .cleanCard__button:hover {
