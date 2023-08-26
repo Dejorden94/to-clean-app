@@ -30,8 +30,28 @@ body {
     width: 40rem;
     background: rgba(20, 20, 20, 1);
     border-radius: 0.5rem;
+    animation-name: popup;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: backwards;
     /* Verdeelt alle blokken over de ruimte */
     /* flex-grow: 1; */
+}
+
+.cleanCard:nth-of-type(1) {
+    animation-delay: 0.1s;
+}
+
+.cleanCard:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+.cleanCard:nth-of-type(3) {
+    animation-delay: 0.3s;
+}
+
+.cleanCard:nth-of-type(4) {
+    animation-delay: 0.4s;
 }
 
 .cleanCard__header {
@@ -105,4 +125,16 @@ body {
 
 .cleanCard__button:hover {
     cursor: pointer;
+}
+
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
 }
