@@ -82,8 +82,12 @@ const makeFooter = (resultMakeActivities) => {
     return footer;
 }
 
-fetch("../data/cards.json").then(
-    response => response.json()
-).then(
-    data => renderCards(data)
-)
+const init = () => {
+    fetch("../data/cards.json").then(
+        response => response.json()
+    ).then(
+        data => renderCards(data)
+    )
+}
+
+init();
