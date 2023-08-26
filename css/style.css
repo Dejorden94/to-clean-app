@@ -147,7 +147,7 @@ body {
     }
 }
 
-@media screen and (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: light) {
     :root {
         --color: rgba(20, 20, 20, 1);
         --bcolor: #eee;
