@@ -9,8 +9,9 @@
 
 :root {
     --color: #eee;
-    --bcolor: rgba(20, 20, 20, 1);
+    --bcolor: #101010;
     --handwriting: 'Caveat', cursive;
+    --background: linear-gradient(#183D3D, #5C8374);
 }
 
 html {
@@ -19,7 +20,7 @@ html {
 
 body {
     font-size: 2rem;
-    background: linear-gradient(to top left, #ADC4CE, 60%, #96B6C5);
+    background: var(--background);
     min-height: 100vh;
     display: flex;
     gap: 2rem;
@@ -123,6 +124,7 @@ body {
     height: 100%;
     width: 30%;
     border-radius: 0;
+    color: var(--bcolor);
     border: none;
     font-size: 100%;
     background: var(--color);
@@ -142,5 +144,17 @@ body {
     to {
         opacity: 1;
         transform: translateY(0rem);
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --color: rgba(20, 20, 20, 1);
+        --bcolor: #eee;
+        --background: linear-gradient(to top left, #ADC4CE, 60%, #96B6C5);
+    }
+
+    .cleanCard {
+        box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2);
     }
 }
