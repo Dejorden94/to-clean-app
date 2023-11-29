@@ -83,11 +83,16 @@ const makeFooter = (resultMakeActivities) => {
 }
 
 const init = () => {
-    fetch("https://dejorden94.github.io/to-clean-app/data/cards.json").then(
-        response => response.json()
-    ).then(
-        data => renderCards(data)
-    )
+    fetch("https://dejorden94.github.io/to-clean-app/data/cards.json")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => renderCards(data))
+        .catch(error => console.error('Er is een fout opgetreden:', error));
+
 }
 
 init();
