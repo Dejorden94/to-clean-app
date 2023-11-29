@@ -92,7 +92,6 @@ const init = () => {
         })
         .then(data => renderCards(data))
         .catch(error => console.error('Er is een fout opgetreden:', error));
-
 }
 
 init();
