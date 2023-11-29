@@ -6,7 +6,7 @@ const renderCards = (data) => {
 }
 
 const makeCard = (cardObject) => {
-    //Maak een article viajavascript
+    //Maak een article via javascript
     let article = document.createElement("article");
     //Geef dezede class cleanCard
     article.classList = "cleanCard";
@@ -83,7 +83,7 @@ const makeFooter = (resultMakeActivities) => {
 }
 
 const init = () => {
-    fetch("../data/cards.json").then(
+    fetch("https://dejorden94.github.io/to-clean-app/data/cards.json").then(
         response => response.json()
     ).then(
         data => renderCards(data)
